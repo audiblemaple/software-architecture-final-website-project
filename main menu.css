@@ -1,0 +1,319 @@
+:root{
+    --MenuWidth: 350px;
+    --MenuHeight: 700px;
+    --LogoWidth: 200px;
+}
+
+
+body{
+    background-color: #878487;
+    background-image: url("img//background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background{
+
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+#header{
+    background-color: rgba(181, 181, 181, 0.4);
+}
+
+#ThAlignLeft{
+    text-align: left;
+}
+
+#ThAlignRight{
+    text-align: right;
+}
+
+#Logo{
+    text-align: right;
+    width: var(--MenuWidth);
+}
+
+#settings{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#InputBox{
+    border: 1px solid rgba(100, 100, 100, 0.8);
+    width: 400px;
+    height: 25px;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: 17px;
+    text-align: right;
+}
+
+#SearchItems{
+    width: 250px;
+    height: 25px;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: 17px;
+    text-align: right;
+}
+
+#product{
+    width: 30%;
+}
+
+#Center{
+    padding: 20px;
+    padding-right: 25px;
+    visibility: hidden;
+    padding-top: 15px;
+    vertical-align: top;
+    text-align: right;
+    width: 65%;
+    height: 100%;
+}
+
+#centerTable{
+    visibility: hidden;
+    background-color: rgba(181, 181, 181, 0.4);
+    border-radius: 15px;
+}
+
+#product{
+    vertical-align: top;
+    width: 35%;
+}
+
+button{
+    width: 150px;
+    text-align: center;
+    border: 2px solid rgba(181, 181, 181, 0.7);
+    border-radius: 12px;
+    background-color: rgba(181, 181, 181, 0.7);
+}
+
+#dat{
+    visibility: hidden;
+}
+
+#employeeLog{
+    width: 100%;
+    text-align: right;
+    border: 2px solid rgba(181, 181, 181, 0.7);
+    border-radius: 8px;
+    background-color: rgba(181, 181, 181, 0.7);
+}
+
+#yerakot{
+    width: 60%;
+    text-align: right;
+    border: 2px solid rgba(181, 181, 181, 0.7);
+    border-radius: 8px;
+    background-color: rgba(181, 181, 181, 0.7);
+}
+
+#fruits{
+    width: 60%;
+    text-align: right;
+    border: 2px solid rgba(181, 181, 181, 0.7);
+    border-radius: 8px;
+    background-color: rgba(181, 181, 181, 0.7);
+}
+
+#halav{
+    width: 60%;
+    text-align: right;
+    border: 2px solid rgba(181, 181, 181, 0.7);
+    border-radius: 8px;
+    background-color: rgba(181, 181, 181, 0.7);
+}
+
+#sweets{
+    width: 60%;
+    text-align: right;
+    border: 2px solid rgba(181, 181, 181, 0.7);
+    border-radius: 8px;
+    background-color: rgba(181, 181, 181, 0.7);
+}
+
+
+
+#customerData{
+    padding-right: 20px;
+    vertical-align: top;
+    text-align: right;
+    visibility: hidden;
+    /* background-color: #757475; */
+    background-color: rgba(181, 181, 181, 0.4);
+}
+
+#search{
+    vertical-align: -12px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+#tritech{
+    width: var(--LogoWidth);
+    border-radius: 5px;
+}
+
+#RightMenu{
+    background-color: rgba(181, 181, 181, 0.4);
+    width: var(--MenuWidth);
+    height: var(--MenuHeight);
+
+}
+
+#Menu{
+    font-family: Arial;
+    font-size: 18px;
+    background-color: white;
+    width: var(--MenuWidth);
+    height: var(--MenuHeight);
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    text-align: right;/*check this one for correct allignment */
+    border-radius: 10px;
+}
+
+#overall{
+    font-family: Arial;
+    font-size: 18px;
+    width: var(--MenuWidth);
+    background-color: white;
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    text-align: right;/*check this one for correct allignment */
+    border-radius: 10px;
+}
+
+#LowerRightMenu{
+    font-family: Arial;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    background-color: rgba(110, 110, 110, 0.3);
+}
+
+#workers{
+    width: 25px;
+    height: 25px;
+}
+
+#menuBorder{
+    border-bottom: 2px solid rgba(110, 110, 110, 0.5);
+}
+
+#goods{
+    width: 25px;
+    height: 25px;
+}
+
+#lowerarea{
+    background-color: rgba(181, 181, 181, 0.4);
+}
+
+.customer{
+    width: 90%;
+    height: 20px;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: 17px;
+    text-align: right;
+}
+
+
+#submitData{
+    width: 40%;
+    height: 50px;
+    text-align: right;
+    border: 2px solid rgba(181, 181, 181, 0.7);
+    border-radius: 8px;
+    background-color: rgba(181, 181, 181, 0.7);
+}
+
+#newcust{
+    visibility: hidden;
+}
+
+#ItemGrid{
+    overflow: auto;
+}
+
+#categories{
+    visibility: hidden;
+}
+
+#back{
+    width: 100%;
+    text-align: right;
+    border: 2px solid rgba(181, 181, 181, 0.7);
+    border-radius: 8px;
+    background-color: rgba(181, 181, 181, 0.7);
+}
+
+
+button{
+    cursor: pointer;
+}
+
+
+#centerTopLeft{
+    text-align: center;
+}
+
+#centerTopMiddle{
+    text-align: center;
+}
+
+#centerTopRight{
+    text-align: center;
+}
+
+#centerMiddleLeft{
+    text-align: center;
+}
+
+#centerMiddleMiddle{
+    text-align: center;
+}
+
+#centerMiddleRight{
+    text-align: center;
+}
+
+#centerLowerLeft{
+    text-align: center;
+}
+
+#centerLowerMiddle{
+    text-align: center;
+}
+
+#centerLowerRight{
+    text-align: center;
+}

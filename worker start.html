@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="worker login.css">
+    <script src="employee manage.js"></script>
+    <meta charset="UTF-8">
+    <title>Employee page</title>
+    <script> logged = true </script>
+</head>
+    <body id="background">
+    <table id="table" border="0px">
+        <tr id="head">
+
+           <th id="leftcol">
+               <img id="back" src="img//back.png" onclick="backtologin()">
+           </th>
+
+            <th id="tasks">
+                <button id="return" type="button" onclick="nofunc()"> <p id="submittext">המשימות שלי</p></button>
+                <button id="return" type="button" onclick="manageEmployees()"> <p id="submittext">ניהול עובדים</p></button>
+                <button id="return" type="button" onclick="nofunc()"> <p id="submittext">הרכב סידור</p></button>
+
+
+            </th>
+
+            <th id="rightcol">
+                <img id="logo" src="img//tritech.png">
+            </th>
+        </tr>
+        <tr id="subheader">
+            <th>
+            </th>
+
+            <th>
+            </th>
+
+            <th id="button">
+                <h2>כניסה</h2>
+            </th>
+        </tr>
+        <tr id="space">
+
+        </tr>
+        <tr>
+
+            <th>
+            </th>
+
+            <td id="centerbox">
+                <p id="title">:התחל משמרת</p>
+                <div class="stopwatch">
+                    <div class="circle" onclick="startStop()">
+
+                        <span class="time" id="display">התחל</span>
+
+                    </div>
+                </div>
+                <br>
+                <button id="submit" type="button" onclick="backtologin()"> <p id="submittext">יציאה</p></button>
+
+            </td>
+
+            <th>
+            </th>
+
+        </tr>
+
+        <tr>
+            <th>
+                <br><br><br><br><br><br>
+            </th>
+        </tr>
+
+        <tr id="lower">
+            <th id="company">
+                tritech ©
+            </th>
+
+            <th>
+                המכללה האקדמית להנדסה אורט בראודה
+            </th>
+            <th>
+                <br><br><br>
+            </th>
+        </tr>
+    </table>
+
+    </body>
+</html>

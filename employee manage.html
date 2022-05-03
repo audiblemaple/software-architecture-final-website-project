@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="employee manage.css">
+    <script src="employee manage.js"></script>
+    <script> logged = true </script>
+    <meta charset="UTF-8">
+    <title>Manage employees</title>
+</head>
+    <body id="background">
+    <table id="table" border="0px">
+        <tr id="head">
+
+           <th id="leftcol">
+               <img id="back" src="img//back.png" onclick="back()">
+           </th>
+
+            <th id="tasks">
+                <button type="button" onclick="nofunc()"> <p id="submittext">המשימות שלי</p></button>
+                <button type="button" onclick=""> <p id="submittext">ניהול עובדים</p></button>
+                <button type="button" onclick="nofunc()"> <p id="submittext">הרכב סידור</p></button>
+            </th>
+
+            <th id="rightcol">
+                <img id="logo" src="img//tritech.png">
+            </th>
+        </tr>
+        <tr id="subheader">
+            <th>
+            </th>
+
+            <th>
+            </th>
+
+            <th id="button">
+                <h2>כניסה</h2>
+            </th>
+        </tr>
+        <tr id="space">
+
+        </tr>
+        <tr>
+
+            <th>
+            </th>
+
+            <th id="centerbox">
+                <div id="employees">
+                    <h3>הוספת עובד</h3>
+                    <table id=addProduct dir="rtl" border = 0px>
+                        <tr>
+                            <th>שם עובד</th>
+                            <th>תפקיד</th>
+                            <th>מספר עובד</th>
+                            <th>שכר שעתי</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id ="employeeName"></td>
+                            <td><input type="text" id ="employeeNumber"></td>
+                            <td><input type="text" id ="position"></td>
+                            <td><input type="text" id ="hourlyWage"></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" onclick="addRow()"><p id="submittext">הוסף עובד</p></button></td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <table id="emplist" dir="rtl">
+                        <tr>
+                            <td>עובדים קיימים:</td>
+                        </tr>
+                            <td id="employeeheader">שם עובד</td>
+                            <td id="employeeheader">תפקיד</td>
+                            <td id="employeeheader">מספר עובד</td>
+                            <td id="employeeheader">שכר שעתי</td>
+                        <tr>
+                            <td> <input disabled="true" type="text" name="employeeName" value="ליאור ז'יגלו" > </td>
+                            <td> <input disabled="true" type="text" name="position" value="קופאי" > </td>
+                            <td> <input disabled="true" type="text" name="employeeNumber" value="6284" > </td>
+                            <td> <input disabled="true" type="text" name="hourlyWage" value="42.00" > </td>
+                        </tr>
+                        <tr>
+                            <td> <input disabled="true" type="text" name="employeeName" value="כפיר חמו" > </td>
+                            <td> <input disabled="true" type="text" name="position" value="שומר" > </td>
+                            <td> <input disabled="true" type="text" name="employeeNumber" value="3585" > </td>
+                            <td> <input disabled="true" type="text" name="hourlyWage" value="48.00" > </td>
+                        </tr>
+                        <tr>
+                            <td> <input disabled="true" type="text" name="employeeName" value="שיראל גולדנברג" > </td>
+                            <td> <input disabled="true" type="text" name="position" value="אחראי משמרת" > </td>
+                            <td> <input disabled="true" type="text" name="employeeNumber" value="6756" > </td>
+                            <td> <input disabled="true" type="text" name="hourlyWage" value="50.00" > </td>
+                        </tr>
+                        <tr>
+                            <td> <input disabled="true" type="text" name="employeeName" value="דניאל ורדימון" > </td>
+                            <td> <input disabled="true" type="text" name="position" value="משגיח כשרות" > </td>
+                            <td> <input disabled="true" type="text" name="employeeNumber" value="1000" > </td>
+                            <td> <input disabled="true" type="text" name="hourlyWage" value="1000.00" > </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </th>
+
+            <th>
+            </th>
+
+        </tr>
+
+        <tr>
+            <th>
+                <br><br><br><br><br><br>
+            </th>
+        </tr>
+
+        <tr id="lower">
+            <th id="company">
+                tritech ©
+            </th>
+
+            <th>
+                המכללה האקדמית להנדסה אורט בראודה
+            </th>
+            <th>
+                <br><br><br>
+            </th>
+        </tr>
+    </table>
+
+    </body>
+</html>

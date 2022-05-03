@@ -1,0 +1,153 @@
+#background{
+    background-image: url("img//warehouse.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#head{
+    background-color: rgba(100, 100, 100, 0.7);
+    height: 70px;
+    text-align: left;
+}
+
+#back{
+    padding-left: 30px;
+    width: 30px;
+    height: 30px;
+
+}
+
+#tasks{
+    text-align: right;
+}
+
+#logo{
+    height: 50px;
+}
+
+#button{
+    text-align: left;
+}
+
+#subheader{
+    background-color: rgba(170, 170, 170, 0.7);
+    height: 60px;
+}
+#space{
+    height: 30px;
+}
+
+#username{
+    color: grey;
+    text-align: right;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    width: 95%;
+    height: 5%;
+}
+
+#password{
+    color: grey;
+    text-align: right;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    width: 95%;
+    height: 5%;
+}
+
+#submit{
+    border: 2px solid slategray;
+    border-radius: 8px;
+    background-color: rgba(155, 155, 155, 0.7);
+    font-size: large;
+    width: 50%;
+    height: 12%;
+}
+
+#submittext{
+    text-align: center;
+    color: white;
+}
+
+#centerbox{
+    font-family: Arial;
+    background-color: rgba(170, 170, 170, 0.7);
+    text-align: right;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 7px;
+    height: 500px;
+    vertical-align: top;
+
+}
+
+#title{
+    font-family: Arial;
+    font-size: 26px;
+    text-align: right;
+}
+
+#centertext{
+    font-size: 42px;
+}
+
+#leftcol{
+    width: 40%;
+}
+
+
+#rightcol{
+    padding-left: 50px;
+    text-align: left;
+    width: 40%;
+}
+
+#company{
+    text-align: left;
+}
+
+#lower{
+    background-color: rgba(181, 181, 181, 0.7);
+    text-align: right;
+    vertical-align: top;
+}
+
+#InputBox{
+    width: 500px;
+    height: 25px;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+}
+
+#search{
+    vertical-align: bottom;
+    width: 30px;
+    height: 30px;
+}
+
+button{
+    cursor: pointer;
+    width: 110px;
+    border: 2px solid darkgrey;
+    border-radius: 8px;
+    background-color: rgba(110, 110, 110, 0.7);
+}
+
+body {
+    background-color: #ffffff;
+    color: #2c3347;
+
+}
+
+#productsTbl{
+}

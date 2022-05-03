@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main menu.css">
+    <script src="main menu.js"></script>
+    <meta charset="UTF-8">
+    <title>Main menu</title>
+</head>
+    <body id="background">
+        <table id="table" border="0px">
+            <tr id="header">
+                <th id="ThAlignLeft">
+                    <img id= "settings" src="img//settings2.png" onclick="nofunc()">
+                </th>
+                <th id="ThAlignRight">
+                    <button type="button" onclick="nocustomer()"> <p><h3>תשלום ללא הרשמה</h3></p></button>
+                    <button type="button" onclick="newCustomer()"> <p><h3>לקוח חדש</h3></p></button>
+                    <input id="InputBox" type="text" name="input box" placeholder="חפש לקוח">
+                    <img id= "search" onclick="SearchCustomer()" src="img//search.png">
+
+                </th>
+
+                <th id="Logo">
+                    <img id= "tritech" src="img//tritech.png">
+                </th>
+
+            </tr>
+            <tr id="leftSide">
+                <th id="customerData">
+                    <h3 id="dat">:פרטי לקוח<br><br>שם: ליאור זיגלו <br><br>טלפון: 0528081434<br><br>תז: 316109123</h3>
+                    <br>
+                    <div id="newcust">
+
+                        <h3>:הרשמת לקוח חדש
+                            <br><br>
+                            <input class="customer" id="custname" type="text" name="input box" placeholder="שם מלא">
+                            <br><br>
+                            <input class="customer" id="custtel" type="text" name="input box" placeholder="טלפון">
+                            <br><br>
+                            <input class="customer" id="custid" type="text" name="input box" placeholder="מספר תעודת זהות">
+                            <button id="submitData" type="button" onclick="addCustomer()"> <p><h3>הירשם</h3></p></button>
+                        </h3>
+                    </div>
+
+
+                    <div id="categories">
+                        <h3>:קטגוריות</h3>
+
+                        <button id="yerakot" type="button" onclick="showveg()"> <p id="submittext"><h3>ירקות</h3></p></button>
+                        <br>
+                        <button id="fruits" type="button" onclick="showfru()"> <p id="submittext"><h3>פירות</h3></p></button>
+                        <br>
+                        <button id="halav" type="button" onclick="showdair()"> <p id="submittext"><h3>מוצרי חלב</h3></p></button>
+                        <br>
+                        <button id="sweets" type="button" onclick="showswee()"> <p id="submittext"><h3>ממתקים</h3></p></button>
+                    </div>
+                </th>
+                    <th id="Center">
+
+                        <!--
+                        <input id="SearchItems" type="text" name="input box" placeholder="חפש מוצר">
+                        <img id= "search" onclick="SearchItems()" src="search.png">
+                        -->
+
+                        <table id = "centerTable" border="0px">
+                            <tr>
+                                <th id = "centerTopLeft" onclick="addItem1()">
+                                    <img id= "product" src="">
+                                    <p id = "centerTopLeftPrice"></p>
+                                </th>
+
+                                <th id = "centerTopMiddle" onclick="addItem1()">
+                                    <img id= "product" src="">
+                                    <p id = "centerTopMiddlePrice"></p>
+                                </th>
+
+                                <th id = "centerTopRight" onclick="addItem1()">
+                                    <img id= "product" src="">
+                                    <p id = "centerTopRightPrice"></p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th id = "centerMiddleLeft" onclick="addItem1()">
+                                    <img id= "product" src="">
+                                    <p id = "centerMiddleLeftPrice"></p>
+                                </th>
+
+                                <th id = "centerMiddleMiddle" onclick="addItem1()">
+                                    <img id= "product" src="">
+                                    <p id = "centerMiddleMiddlePrice"></p>
+                                </th>
+
+                                <th id = "centerMiddleRight" onclick="addItem1()">
+                                    <img id= "product" src="">
+                                    <p id = "centerMiddleRightPrice"></p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th id = "centerLowerLeft" onclick="addItem1()">
+                                    <img id= "product" src="">
+                                    <p id = "centerLowerLeftPrice"></p>
+                                </th>
+
+                                <th id = "centerLowerMiddle" onclick="addItem1()">
+                                    <img id= "product" src="">
+                                    <p id = "centerLowerMiddlePrice"></p>
+                                </th>
+
+                                <th id = "centerLowerRight" onclick="addItem1()">
+                                    <img id= "product" src="">
+                                    <p id = "centerLowerRightPrice"></p>
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+
+                <th id="RightMenu">
+                    <textarea id="Menu" readonly> :רשימת מוצרים</textarea>
+                    <textarea id="overall" readonly>  :סה"כ לתשלום</textarea>
+                </th>
+            </tr>
+            <tr id="lowerarea">
+                <th id="return">
+                    <button id="back" type="button" onclick="hide()"> <p id="submittext"><h3>חזור</h3></p></button>
+                </th>
+
+                <th>
+                    <p id="test"> tritech ©</p>
+                </th>
+
+                <th>
+                    <table id="LowerRightMenu">
+                        <tr id="menuBorder">
+                            <th onclick="WorkerLogin()" >
+                                כניסה
+                            </th>
+                            <th width="35" onclick="WorkerLogin()">
+                                <img id= "workers" src="img//workers.png">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th onclick="manageGoods()">
+                                מלאי
+                            </th>
+                            <th width="35" onclick="manageGoods()">
+                                <img id= "goods" src="img//goods.png">
+                            </th>
+                        </tr>
+                    </table>
+
+
+                </th>
+            </tr>
+
+            <tr>
+
+            </tr>
+        </table>
+
+    </body>
+</html>

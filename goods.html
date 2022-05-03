@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="goods.css">
+    <script src="goods.js"></script>
+    <meta charset="UTF-8">
+    <title>Add goods</title>
+</head>
+    <body id="background">
+    <table id="table" border="0px">
+        <tr id="head">
+
+           <th id="leftcol">
+               <img id="back" src="img//back.png" onclick="back()">
+           </th>
+
+            <th id="tasks">
+                <button type="button" onclick="statistics()"> <p id="submittext">צפה בסטטיסטיקה</p></button>
+                <button type="button" onclick="addGoods()"> <p id="submittext">הוסף מוצרים</p></button>
+                <button type="button" onclick="nofunc()"> <p id="submittext">צפה בחוסרים</p></button>
+            </th>
+
+            <th id="rightcol">
+                <img id="logo" src="img//tritech.png">
+            </th>
+        </tr>
+        <tr id="subheader">
+            <th>
+            </th>
+
+            <th>
+            </th>
+
+            <th id="button">
+                <h2>כניסה</h2>
+            </th>
+        </tr>
+        <tr id="space">
+
+        </tr>
+        <tr>
+
+            <th>
+            </th>
+
+            <th id="centerbox">
+                <div>
+                    <h2>הוספת מוצרים למלאי</h2>
+                    <br>
+                    <table id=addProduct dir="rtl">
+                        <tr>
+                            <th>שם מוצר</th>
+                            <th>מק"ט</th>
+                            <th>כמות</th>
+                            <th>מחיר ליחידה \ ק"ג</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="productName"></td>
+                            <td><input type="text" id="productCatNum"></td>
+                            <td><input type="text" id="amount" onchange="capValues()"></td>
+                            <td><input type="text" id="pricePerUnit" placeholder="0.00"  onchange="capValues()"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" onclick="clearInputRow()">איפוס שורה</button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="addRow()">הוספת שורה</button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="deleteRow()">מחיקת שורה</button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="editRows()" id="editBtn">עריכה</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+
+
+            <table id="productsTbl" dir="rtl">
+                <tr>
+                    <th>שם מוצר</th>
+                    <th>מק"ט</th>
+                    <th>כמות</th>
+                    <th>מחיר ליחידה \ ק"ג</th>
+                </tr>
+                <tr>
+                    <td> <input disabled="true" type="text" name="productName" value="בצל" > </td>
+                    <td> <input disabled="true" type="text" name="productCatNum" value="k00002" > </td>
+                    <td> <input disabled="true" type="text" name="amount" value="10000" > </td>
+                    <td> <input disabled="true" type="text" name="pricePerUnit" value="3.20" > </td>
+                </tr>
+                <tr>
+                    <td> <input disabled="true" type="text" name="productName" value="עגבנייה" > </td>
+                    <td> <input disabled="true" type="text" name="productCatNum" value="k00003" > </td>
+                    <td> <input disabled="true" type="text" name="amount" value="10523" > </td>
+                    <td> <input disabled="true" type="text" name="pricePerUnit" value="2.40" > </td>
+                </tr>
+                <tr>
+                    <td> <input disabled="true" type="text" name="productName" value="חסה" > </td>
+                    <td> <input disabled="true" type="text" name="productCatNum" value="k00053" > </td>
+                    <td> <input disabled="true" type="text" name="amount" value="500" > </td>
+                    <td> <input disabled="true" type="text" name="pricePerUnit" value="7.90" > </td>
+                </tr>
+                <tr>
+                    <td> <input disabled="true" type="text" name="productName" value="שוקו תנובה" > </td>
+                    <td> <input disabled="true" type="text" name="productCatNum" value="k0p253" > </td>
+                    <td> <input disabled="true" type="text" name="amount" value="300" > </td>
+                    <td> <input disabled="true" type="text" name="pricePerUnit" value="12.00" > </td>
+                </tr>
+                <tr>
+                    <td> <input disabled="true" type="text" name="productName" value="תפוח אדמה" > </td>
+                    <td> <input disabled="true" type="text" name="productCatNum" value="k0pot2" > </td>
+                    <td> <input disabled="true" type="text" name="amount" value="10000" > </td>
+                    <td> <input disabled="true" type="text" name="pricePerUnit" value="3.20" > </td>
+                </tr>
+                <tr>
+                    <td> <input disabled="true" type="text" name="productName" value="תפוח אדמה אדום" > </td>
+                    <td> <input disabled="true" type="text" name="productCatNum" value="k0pot3" > </td>
+                    <td> <input disabled="true" type="text" name="amount" value="1756" > </td>
+                    <td> <input disabled="true" type="text" name="pricePerUnit" value="4.30" > </td>
+                </tr>
+                <tr>
+                    <td> <input disabled="true" type="text" name="productName" value="בצל אדום" > </td>
+                    <td> <input disabled="true" type="text" name="productCatNum" value="k00re9" > </td>
+                    <td> <input disabled="true" type="text" name="amount" value="950" > </td>
+                    <td> <input disabled="true" type="text" name="pricePerUnit" value="2.90" > </td>
+                </tr>
+                <tr>
+                    <td> <input disabled="true" type="text" name="productName" value="פלפל אדום" > </td>
+                    <td> <input disabled="true" type="text" name="productCatNum" value="kpep23" > </td>
+                    <td> <input disabled="true" type="text" name="amount" value="720" > </td>
+                    <td> <input disabled="true" type="text" name="pricePerUnit" value="1.90" > </td>
+                </tr>
+
+                <tr>
+                    <td> <input disabled="true" type="text" name="productName" value="ענבים" > </td>
+                    <td> <input disabled="true" type="text" name="productCatNum" value="kgra52" > </td>
+                    <td> <input disabled="true" type="text" name="amount" value="250" > </td>
+                    <td> <input disabled="true" type="text" name="pricePerUnit" value="13.20" > </td>
+                </tr>
+
+            </table>
+
+            </div>
+            </th>
+
+            <th>
+            </th>
+
+        </tr>
+
+        <tr>
+            <th>
+                <br><br><br><br><br><br>
+            </th>
+        </tr>
+
+        <tr id="lower">
+            <th id="company">
+                tritech ©
+            </th>
+
+            <th>
+                המכללה האקדמית להנדסה אורט בראודה
+            </th>
+            <th>
+                <br><br><br>
+            </th>
+        </tr>
+    </table>
+
+    </body>
+</html>
